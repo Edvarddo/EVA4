@@ -7,10 +7,13 @@ import {
 } from "react-router-dom"
 
 
+
+
 // components
 import App from './App.jsx' // main app
 import HolaMundo from "./components/HolaMundo" // router example
 import Calama from "./components/Calama.jsx" // router example
+import Tareas from "./components/tareas/Tareas"
 
 // components: ejemplos 01
 import EstadosInicio from "./components/ej01_estados/EstadosInicio"
@@ -46,6 +49,10 @@ const router = createBrowserRouter([
     {
         path: "/ejercicio01",
         element: <Ejercicio01 />
+    },
+    {
+        path:"/tareas",
+        element: <Tareas />
     }
 ])
 
